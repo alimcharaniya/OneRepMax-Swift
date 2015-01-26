@@ -409,6 +409,7 @@
 				6C511B8D1A664423007E0F5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6C511B8E1A664423007E0F5F /* Build configuration list for PBXNativeTarget "OneRepMax-SwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +418,7 @@
 				6C511B901A664423007E0F5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

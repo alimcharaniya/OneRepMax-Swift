@@ -10,6 +10,16 @@ import UIKit
 
 class FirstViewController: UIViewController {
 
+    @IBOutlet weak var weight: UITextField!
+    
+   
+    @IBOutlet weak var reps: UISegmentedControl!
+    
+    
+    @IBOutlet weak var oneRep: UILabel!
+    
+    var myRepsDouble = (reps.titleForSegmentAtIndex(reps.selectedSegmentIndex)! as NSString).doubleValue
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +30,22 @@ class FirstViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func Calculate(sender: UIButton) {
+        
+        
+        NSLog("Weight = \(weight.text)")
+        
+        NSLog("reps = \(reps.selectedSegmentIndex)")
+        
+        
+        
+        
+        
+    }
 }
+    
+    
+
+
+
 
