@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class FirstViewController: UIViewController {
 
     @IBOutlet weak var weight: UITextField!
@@ -16,12 +17,18 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var reps: UISegmentedControl!
     
     
+    
     @IBOutlet weak var oneRep: UILabel!
     
-    var myRepsDouble = (reps.titleForSegmentAtIndex(reps.selectedSegmentIndex)! as NSString).doubleValue
+    //convert var weight to type double for calculation
+    
+    var weightDouble:Double = 14
+    
+    var repsDouble:Double = 12
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -38,10 +45,8 @@ class FirstViewController: UIViewController {
         NSLog("reps = \(reps.selectedSegmentIndex)")
         
         
-        
-        
-        
     }
+    
 }
     
     
