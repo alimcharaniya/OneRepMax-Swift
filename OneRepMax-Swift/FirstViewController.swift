@@ -11,20 +11,13 @@ import UIKit
 
 class FirstViewController: UIViewController {
 
+    //declare variables within firstViewControllerClass 
+    
     @IBOutlet weak var weight: UITextField!
     
-   
-    @IBOutlet weak var reps: UISegmentedControl!
-    
-    
+    @IBOutlet weak var reps: UITextField!
     
     @IBOutlet weak var oneRep: UILabel!
-    
-    //convert var weight to type double for calculation
-    
-    var weightDouble:Double = 14
-    
-    var repsDouble:Double = 12
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,9 +35,10 @@ class FirstViewController: UIViewController {
         
         NSLog("Weight = \(weight.text)")
         
-        NSLog("reps = \(reps.selectedSegmentIndex)")
         
+        NSLog("Reps = \(reps.text)")
         
+    
     }
     
 }
