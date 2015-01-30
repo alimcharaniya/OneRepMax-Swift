@@ -70,8 +70,7 @@ class FirstViewController: UIViewController {
         NSLog("Weight = \(weight.text)")
         NSLog("Reps = \(reps.text)")
         
-        
-
+            //initialize and set one rep max variable with formula
         var oneRep: Double = round(weightDouble * (1 + repsDouble/30))
         
         println("\(oneRep.description)")
