@@ -11,13 +11,13 @@ import UIKit
 
 class FirstViewController: UIViewController {
 
-    //declare variables within firstViewControllerClass 
+    //declare local variables within firstViewControllerClass
     
     @IBOutlet weak var weight: UITextField!
     
     @IBOutlet weak var reps: UITextField!
     
-    @IBOutlet weak var oneRep: UILabel!
+    @IBOutlet weak var oneRepLabel: UILabel!
     
     //default functions
     override func viewDidLoad() {
@@ -34,9 +34,16 @@ class FirstViewController: UIViewController {
     //function for when calculate button is pressed
     @IBAction func Calculate(sender: UIButton) {
         
+        //do some type casting to convert text to double for calculations
         var repsDouble = (reps.text as NSString).doubleValue
         var weightDouble = (weight.text as NSString).doubleValue
+    
         
+        //note to self and dave.. See if there is a way to clean up this code by turning the error box code into a single function..
+        //see if you could call the function three times and pass the error message as a parameter to clean up this code...
+        
+        
+        //error checking alert boxes
         if (repsDouble > 10) {
             
             var alertView = UIAlertView();
@@ -64,13 +71,12 @@ class FirstViewController: UIViewController {
             
         }
         
-        else{
+        else {
             
-        
         NSLog("Weight = \(weight.text)")
         NSLog("Reps = \(reps.text)")
         
-            //initialize and set one rep max variable with formula
+        //initialize and set one rep max variable with formula
         var oneRep: Double = round(weightDouble * (1 + repsDouble/30))
         
         println("\(oneRep.description)")

@@ -14,7 +14,6 @@
 		6C511B791A664422007E0F5F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C511B781A664422007E0F5F /* Images.xcassets */; };
 		6C511B7C1A664422007E0F5F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C511B7A1A664422007E0F5F /* LaunchScreen.xib */; };
 		6C511B881A664423007E0F5F /* OneRepMax_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C511B871A664423007E0F5F /* OneRepMax_SwiftTests.swift */; };
-		6CE80AC21A7B5CCB004612D1 /* elite-training-dumbbell-training-videos.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CE80AC11A7B5CCB004612D1 /* elite-training-dumbbell-training-videos.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +38,6 @@
 		6C511B811A664423007E0F5F /* OneRepMax-SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OneRepMax-SwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C511B861A664423007E0F5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C511B871A664423007E0F5F /* OneRepMax_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneRepMax_SwiftTests.swift; sourceTree = "<group>"; };
-		6CE80AC11A7B5CCB004612D1 /* elite-training-dumbbell-training-videos.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "elite-training-dumbbell-training-videos.jpg"; path = "../../../Downloads/elite-training-dumbbell-training-videos.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +110,6 @@
 		6C511B851A664423007E0F5F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6CE80AC11A7B5CCB004612D1 /* elite-training-dumbbell-training-videos.jpg */,
 				6C511B861A664423007E0F5F /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -200,7 +197,6 @@
 			files = (
 				6C511B771A664422007E0F5F /* Main.storyboard in Resources */,
 				6C511B7C1A664422007E0F5F /* LaunchScreen.xib in Resources */,
-				6CE80AC21A7B5CCB004612D1 /* elite-training-dumbbell-training-videos.jpg in Resources */,
 				6C511B791A664422007E0F5F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
