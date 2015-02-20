@@ -78,8 +78,7 @@ class FirstViewController: UIViewController {
         println("\(oneRep.description)")
             
         //fix thread error and see if this function call passes value to UITextLabel
-        oneRepLabel.text = oneRep.description;
-            
+        oneRepLabel.text = "Alim"
             
         }
     }
