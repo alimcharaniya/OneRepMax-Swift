@@ -210,45 +210,6 @@
                                     </mask>
                                 </variation>
                             </navigationBar>
-                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gx3-Dr-och">
-                                <rect key="frame" x="239" y="278" width="122" height="55"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="55" id="4le-GY-Khk"/>
-                                    <constraint firstAttribute="width" constant="122" id="B7t-Av-gx1"/>
-                                    <constraint firstAttribute="height" constant="55" id="roF-Kb-VZf"/>
-                                    <constraint firstAttribute="width" constant="122" id="tgR-3g-kiU"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Calculate">
-                                    <color key="titleColor" red="0.79229797980000005" green="0.68413676320000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="4le-GY-Khk"/>
-                                        <exclude reference="B7t-Av-gx1"/>
-                                        <exclude reference="roF-Kb-VZf"/>
-                                        <exclude reference="tgR-3g-kiU"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="239" y="363" width="122" height="55"/>
-                                </variation>
-                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="139" y="341" width="122" height="55"/>
-                                    <mask key="constraints">
-                                        <exclude reference="4le-GY-Khk"/>
-                                        <include reference="B7t-Av-gx1"/>
-                                        <include reference="roF-Kb-VZf"/>
-                                        <exclude reference="tgR-3g-kiU"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <action selector="Calculate:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Wb6-ZW-HzD"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.39088147095959591" green="0.38575455860411179" blue="0.38168107579948257" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -312,7 +273,6 @@
                             <mask key="subviews">
                                 <exclude reference="QiD-M9-VFf"/>
                                 <exclude reference="qez-l1-eWX"/>
-                                <exclude reference="Gx3-Dr-och"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="E5D-PO-Mzs"/>
@@ -376,7 +336,6 @@
                             <mask key="subviews">
                                 <include reference="QiD-M9-VFf"/>
                                 <include reference="qez-l1-eWX"/>
-                                <include reference="Gx3-Dr-och"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="E5D-PO-Mzs"/>
@@ -440,7 +399,6 @@
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
                     <navigationItem key="navigationItem" id="koN-SG-6ko"/>
                     <connections>
-                        <outlet property="oneRep" destination="ofc-sx-inB" id="FZu-zW-ryl"/>
                         <outlet property="reps" destination="QiD-M9-VFf" id="zGa-e0-ojm"/>
                         <outlet property="weight" destination="2M2-XE-VWI" id="4qe-BC-KC5"/>
                     </connections>
