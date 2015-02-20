@@ -38,11 +38,6 @@ class FirstViewController: UIViewController {
         var repsDouble = (reps.text as NSString).doubleValue
         var weightDouble = (weight.text as NSString).doubleValue
     
-        
-        //note to self and dave.. See if there is a way to clean up this code by turning the error box code into a single function..
-        //see if you could call the function three times and pass the error message as a parameter to clean up this code...
-        
-        
         //error checking alert boxes
         if (repsDouble > 10) {
             
@@ -71,6 +66,7 @@ class FirstViewController: UIViewController {
             
         }
         
+        //all fields filled out correctly
         else {
             
         NSLog("Weight = \(weight.text)")
@@ -80,9 +76,13 @@ class FirstViewController: UIViewController {
         var oneRep: Double = round(weightDouble * (1 + repsDouble/30))
         
         println("\(oneRep.description)")
-        
+            
+            //fix thread error and see if this function call passes value to UITextLabel
+            oneRepLabel.text = oneRep.description;
+            
+            
         }
-}
+    }
 }
 
 
