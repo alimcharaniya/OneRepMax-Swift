@@ -38,6 +38,7 @@ class FirstViewController: UIViewController {
         var repsDouble = (reps.text as NSString).doubleValue
         var weightDouble = (weight.text as NSString).doubleValue
     
+        
         //error checking alert boxes
         if (repsDouble > 10) {
             
@@ -75,12 +76,15 @@ class FirstViewController: UIViewController {
         //initialize and set one rep max variable with formula
         var oneRep: Double = round(weightDouble * (1 + repsDouble/30))
         
-        println("\(oneRep.description)")
+        println("One rep max = \(oneRep.description)")
             
-        //fix thread error and see if this function call passes value to UITextLabel
-        oneRepLabel.text = "Alim"
+        oneRepLabel.text = "\(oneRep.description) Lbs"
             
         }
+        
+        
+        
+        
     }
 }
 
