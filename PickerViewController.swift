@@ -14,10 +14,8 @@ class PickerViewController: UIViewController{
     
     @IBOutlet weak var liftType: UIPickerView!
     
-    
-    
-    
-    let pickerData = ["Bench Press", "Squat", "Hang Clean"]
+    //constant set as an array to hold different types of lift to put in pickerView
+    let pickerData = ["Bench Press", "Squat", "Hang Clean", "Deadlift", "Curl","Shoulder Press","Other"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,4 +28,18 @@ class PickerViewController: UIViewController{
         // Dispose of any resources that can be recreated.
     }
 
+    
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerData.count
+    }
+    
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
+        return pickerData[row]
+    }
+    
+    
 }

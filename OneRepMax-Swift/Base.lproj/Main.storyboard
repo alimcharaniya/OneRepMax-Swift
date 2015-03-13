@@ -189,7 +189,7 @@
                                     <rect key="frame" x="239" y="363" width="122" height="55"/>
                                 </variation>
                                 <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="139" y="272" width="122" height="55"/>
+                                    <rect key="frame" x="139" y="321" width="122" height="55"/>
                                     <mask key="constraints">
                                         <include reference="LOT-8p-1qa"/>
                                         <include reference="V4e-qm-9Sy"/>
@@ -198,7 +198,6 @@
                                 <connections>
                                     <action selector="Calculate:" destination="9pv-A4-QxB" eventType="touchUpInside" id="z8G-uu-TBj"/>
                                     <action selector="log:" destination="9pv-A4-QxB" eventType="touchUpInside" id="dyV-Am-nIG"/>
-                                    <segue destination="97w-43-ReS" kind="show" id="vgR-xo-5Mi"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -306,45 +305,6 @@
             </objects>
             <point key="canvasLocation" x="499.5" y="-380"/>
         </scene>
-        <!--Picker View Controller-->
-        <scene sceneID="r5A-cb-aQG">
-            <objects>
-                <viewController id="97w-43-ReS" customClass="PickerViewController" customModule="OneRepMax_Swift" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Edv-pt-y2g"/>
-                        <viewControllerLayoutGuide type="bottom" id="HZg-MF-FhX"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="OTJ-Nc-yZP">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZgK-Gt-oBN" customClass="UIPickerViewController">
-                                <rect key="frame" x="0.0" y="-162" width="320" height="162"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="166" width="400" height="162"/>
-                                </variation>
-                            </pickerView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="ZgK-Gt-oBN"/>
-                            </mask>
-                        </variation>
-                        <variation key="widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="ZgK-Gt-oBN"/>
-                            </mask>
-                        </variation>
-                    </view>
-                    <connections>
-                        <outlet property="liftType" destination="ZgK-Gt-oBN" id="3sB-n5-hWn"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6LG-ig-HiL" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1678.5" y="-39"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="37B-4H-Pl5">
             <objects>
@@ -361,10 +321,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="400" id="20Z-Xk-bz4"/>
-                                    <constraint firstAttribute="width" constant="400" id="P5K-r7-f4N"/>
-                                    <constraint firstAttribute="height" constant="44" id="nsy-Qe-iTi"/>
-                                    <constraint firstAttribute="height" constant="44" id="rDw-KQ-fd2"/>
+                                    <constraint firstAttribute="width" constant="400" id="NTF-q8-Llw"/>
+                                    <constraint firstAttribute="height" constant="44" id="QCE-2f-uu5"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="bZG-Pq-JVi"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="400" id="mra-bO-sh6"/>
                                 </constraints>
                                 <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <items>
@@ -379,31 +339,21 @@
                                 </items>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="20Z-Xk-bz4"/>
-                                        <exclude reference="P5K-r7-f4N"/>
-                                        <exclude reference="nsy-Qe-iTi"/>
-                                        <exclude reference="rDw-KQ-fd2"/>
+                                        <exclude reference="NTF-q8-Llw"/>
+                                        <exclude reference="QCE-2f-uu5"/>
+                                        <exclude reference="bZG-Pq-JVi"/>
+                                        <exclude reference="mra-bO-sh6"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact" ambiguous="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="400" height="44"/>
+                                <variation key="widthClass=compact">
                                     <mask key="constraints">
-                                        <exclude reference="20Z-Xk-bz4"/>
-                                        <include reference="P5K-r7-f4N"/>
-                                        <exclude reference="nsy-Qe-iTi"/>
-                                        <include reference="rDw-KQ-fd2"/>
+                                        <include reference="NTF-q8-Llw"/>
+                                        <include reference="QCE-2f-uu5"/>
+                                        <include reference="bZG-Pq-JVi"/>
+                                        <include reference="mra-bO-sh6"/>
                                     </mask>
                                 </variation>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About One Rep Max Calculator" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQ9-R7-01h">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="54" y="82" width="292" height="22"/>
-                                </variation>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jwe-s7-RVt">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <string key="text">This one rep max calculator has been developed and released by Alim Charaniya with the asssistance of Dave Shreiner. This application is part of Alim Charaniya's 2015 Windsor High School senior project. This app was developed using Apple's XCode IDE and the Swift language.</string>
@@ -411,7 +361,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="66" y="118" width="268" height="150"/>
+                                    <rect key="frame" x="66" y="135" width="268" height="150"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The calculator uses the formula:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vhq-qu-0BL">
@@ -420,7 +370,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="39" y="314" width="322" height="28"/>
+                                    <rect key="frame" x="39" y="323" width="322" height="28"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dtR-lI-Dar">
@@ -430,7 +380,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="39" y="437" width="322" height="91"/>
+                                    <rect key="frame" x="39" y="453" width="322" height="91"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OneRepMax = Weight X (1 + Reps/30)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bM-i0-XSD">
@@ -439,29 +389,53 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="28" y="380" width="345" height="27"/>
+                                    <rect key="frame" x="28" y="390" width="345" height="27"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About One Rep Max Calculator" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQ9-R7-01h">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="54" y="92" width="292" height="22"/>
                                 </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.39088147099999998" green="0.38575455860000002" blue="0.38168107579999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="HTA-VJ-Oui" secondAttribute="trailing" constant="-16" id="JVV-jh-mig"/>
+                            <constraint firstItem="HTA-VJ-Oui" firstAttribute="leading" secondItem="F8c-4a-gmr" secondAttribute="leadingMargin" constant="-16" id="Ngt-XH-xMP"/>
+                            <constraint firstItem="HTA-VJ-Oui" firstAttribute="top" secondItem="F9h-FB-5ix" secondAttribute="bottom" id="f6n-PK-TyO"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="HTA-VJ-Oui"/>
-                                <exclude reference="mQ9-R7-01h"/>
                                 <exclude reference="jwe-s7-RVt"/>
                                 <exclude reference="vhq-qu-0BL"/>
                                 <exclude reference="dtR-lI-Dar"/>
                                 <exclude reference="9bM-i0-XSD"/>
+                                <exclude reference="mQ9-R7-01h"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="JVV-jh-mig"/>
+                                <exclude reference="Ngt-XH-xMP"/>
+                                <exclude reference="f6n-PK-TyO"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="HTA-VJ-Oui"/>
-                                <include reference="mQ9-R7-01h"/>
                                 <include reference="jwe-s7-RVt"/>
                                 <include reference="vhq-qu-0BL"/>
                                 <include reference="dtR-lI-Dar"/>
                                 <include reference="9bM-i0-XSD"/>
+                                <include reference="mQ9-R7-01h"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="JVV-jh-mig"/>
+                                <include reference="Ngt-XH-xMP"/>
+                                <include reference="f6n-PK-TyO"/>
                             </mask>
                         </variation>
                     </view>
@@ -494,8 +468,11 @@
                                 <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <items>
                                     <navigationItem id="bO2-mF-AoP">
-                                        <barButtonItem key="leftBarButtonItem" style="done" id="ztH-hn-VDM">
-                                            <color key="tintColor" red="0.40711179289999999" green="0.63239647229999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Calculator" id="hMj-3X-vBM">
+                                            <color key="tintColor" red="0.3411764706" green="0.5450980392" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <segue destination="9pv-A4-QxB" kind="show" id="zil-JQ-zK4"/>
+                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -517,11 +494,11 @@
                                     </mask>
                                 </variation>
                             </navigationBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="0Xa-d0-7Kb">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="gjo-wk-dfm">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="44" width="400" height="507"/>
+                                    <rect key="frame" x="0.0" y="44" width="400" height="600"/>
                                 </variation>
                             </tableView>
                         </subviews>
@@ -529,13 +506,13 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="xTA-IC-dma"/>
-                                <exclude reference="0Xa-d0-7Kb"/>
+                                <exclude reference="gjo-wk-dfm"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="xTA-IC-dma"/>
-                                <include reference="0Xa-d0-7Kb"/>
+                                <include reference="gjo-wk-dfm"/>
                             </mask>
                         </variation>
                     </view>
@@ -570,7 +547,7 @@
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="u7Y-xg-7CH"/>
+        <segue reference="1Ho-th-RPl"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>
