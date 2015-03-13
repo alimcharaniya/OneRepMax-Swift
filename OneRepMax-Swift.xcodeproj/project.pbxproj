@@ -14,6 +14,7 @@
 		6C511B791A664422007E0F5F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C511B781A664422007E0F5F /* Images.xcassets */; };
 		6C511B7C1A664422007E0F5F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C511B7A1A664422007E0F5F /* LaunchScreen.xib */; };
 		6C511B881A664423007E0F5F /* OneRepMax_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C511B871A664423007E0F5F /* OneRepMax_SwiftTests.swift */; };
+		6CAB5A841A9AD62C00F07C55 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAB5A831A9AD62C00F07C55 /* PickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		6C511B811A664423007E0F5F /* OneRepMax-SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OneRepMax-SwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C511B861A664423007E0F5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C511B871A664423007E0F5F /* OneRepMax_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneRepMax_SwiftTests.swift; sourceTree = "<group>"; };
+		6CAB5A831A9AD62C00F07C55 /* PickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PickerViewController.swift; path = ../PickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			children = (
 				6C511B6F1A664422007E0F5F /* AppDelegate.swift */,
 				6C511B711A664422007E0F5F /* FirstViewController.swift */,
+				6CAB5A831A9AD62C00F07C55 /* PickerViewController.swift */,
 				6C511B731A664422007E0F5F /* SecondViewController.swift */,
 				6C511B751A664422007E0F5F /* Main.storyboard */,
 				6C511B781A664422007E0F5F /* Images.xcassets */,
@@ -217,6 +220,7 @@
 			files = (
 				6C511B741A664422007E0F5F /* SecondViewController.swift in Sources */,
 				6C511B701A664422007E0F5F /* AppDelegate.swift in Sources */,
+				6CAB5A841A9AD62C00F07C55 /* PickerViewController.swift in Sources */,
 				6C511B721A664422007E0F5F /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,9 +344,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				INFOPLIST_FILE = "OneRepMax-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
 			};
 			name = Debug;
 		};
@@ -350,9 +356,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				INFOPLIST_FILE = "OneRepMax-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
 			};
 			name = Release;
 		};

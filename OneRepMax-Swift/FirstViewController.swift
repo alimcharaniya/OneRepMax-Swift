@@ -1,4 +1,4 @@
-//
+
 //  FirstViewController.swift
 //  OneRepMax-Swift
 //
@@ -19,6 +19,10 @@ class FirstViewController: UIViewController {
     
     @IBOutlet weak var oneRepLabel: UILabel!
     
+    @IBOutlet weak var log: UIButton!
+    
+    var oneRep: Double = 0.0
+    
     //default functions
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,10 +38,11 @@ class FirstViewController: UIViewController {
     //function for when calculate button is pressed
     @IBAction func Calculate(sender: UIButton) {
         
-        //do some type casting to convert text to double for calculations
+        //type casting
         var repsDouble = (reps.text as NSString).doubleValue
         var weightDouble = (weight.text as NSString).doubleValue
     
+        
         //error checking alert boxes
         if (repsDouble > 10) {
             
@@ -73,15 +78,29 @@ class FirstViewController: UIViewController {
         NSLog("Reps = \(reps.text)")
         
         //initialize and set one rep max variable with formula
-        var oneRep: Double = round(weightDouble * (1 + repsDouble/30))
+        oneRep = round(weightDouble * (1 + repsDouble/30))
         
-        println("\(oneRep.description)")
+        println("One rep max = \(oneRep.description)")
             
-        //fix thread error and see if this function call passes value to UITextLabel
-        oneRepLabel.text = "Alim"
+        oneRepLabel.text = "\(oneRep.description) Lbs"
             
+        log.enabled = true
         }
+        
     }
+        //log button function when pressed
+        @IBAction func log(sender: AnyObject) {
+            
+            println("Calculate button pressed")
+            
+    }
+        //disable log button based on certain constraints
+        @IBAction func logDisable(sender: AnyObject) {
+        
+        log.enabled = false
+            println("Disabling log button")
+    }
+    
 }
 
 
